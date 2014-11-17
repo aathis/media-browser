@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+ 
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #333;
+	color: #efefef; 
+	font-size: 16px;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+a {
+	color: #D0E0EB;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}
+
+.content {
+	max-width: 1290px;
+	padding: 0 1em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.component {
+	position: relative;
+	background: url(../img/gridme.png) repeat center center;
+	padding: 4em;
+	height: 500px;
+	border: 3px solid #49708A;
+	max-width: 901px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+ 
+.modal-dialog{
+	width: 900px; 
+}
+
+.modal-title{
+	color: #202020;
+}
+
+.menu-header{
+	background-color: #fefefe;  
+	margin-bottom: 20px;
+
+	-webkit-box-shadow: 0 8px 6px -6px #555;
+    -moz-box-shadow: 0 8px 6px -6px #555;
+        box-shadow: 0 8px 6px -6px #555;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	color: #333;
+}
+
+.nav>li>a:hover { 
+	background: none;
+}
+
+.modal-body{
+	padding-top: 0px;
+}
+
+.head-active{
+	border-bottom: #1270DF solid 4px;
+}
+
+.modal-footer, .media-browser-body{
+	background-color: #efefef;
+}
+
+.med{ 
+	display: table;
+	vertical-align: middle;
+	margin: 300px auto;
+}
+ 
+@media screen and (max-width: 27em) {
+	.codrops-icon {
+		font-size: 1.5em;
+	}
+	.codrops-icon span {
+		display: none;
+	}
+}

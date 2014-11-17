@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title> Media browser </title> 
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body> 
+		<div class="container">
+			<div class="med"> 
+				<!-- Button to trigger modal -->
+				<a href="#" class="btn btn-default" data-toggle="modal" data-target="#browser"> <i class="fa fa-folder-open"></i> Test media browser </a>
+			</div>	
+		</div>
+			 
+			
+			<!-- Modal -->
+			<!-- Media browser Modal -->
+            <div class="modal fade" id="browser" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                
+                <div class="modal-content"> 
+                  	<div class="modal-header">
+                    	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    	<h4 class="modal-title" id="myModalLabel"> Meteor </h4>
+                  	</div>
+
+                  <!-- modal body -->
+                  <div class="modal-body media-browser-body">
+                    <!-- row -->
+                    <div class="row">
+                    	<div class="menu-header">
+                    		<ul class="nav nav-pills"> 
+                    		  <li role="presentation" class="head-active"><a href="#"> File Upload </a></li>  
+							  <li role="presentation"><a href="#"> File Manager </a></li> 
+							  <li role="presentation"><a href="#"> Fetch URL </a></li> 
+							</ul>
+                    	</div>
+                    	
+
+                    	<!-- Top Navigation --> 
+						<div class="content"> 
+							<div class="component">
+								<div class="overlay">
+									<div class="overlay-inner">
+									</div>
+								</div>
+								<!-- This image must be on the same domain as the demo or it will not work on a local file system -->
+								<!-- http://en.wikipedia.org/wiki/Cross-origin_resource_sharing -->
+								<img class="resize-image" src="img/image.jpg"> 
+								<button class="btn-crop js-crop"> Crop <img class="icon-crop" src="img/crop.svg"></button>
+							</div> 
+						</div><!-- /content -->
+						<!-- Related demos -->  
+                    </div> 
+                  </div><!-- ./row -->
+
+                  <div class="modal-footer">
+                    <div class="row">
+                        <!-- file upload-->
+                        <div class="col-md-6">
+                          	<input type="file" class="file-input">  
+                        </div>
+
+                        <!-- Fetch URL-->
+                        <div class="col-md-6">    
+                            <button class="btn btn-success"> Okay </button> 
+                        </div>
+                    </div>  
+                </div>
+
+                </div><!-- ./body panel --> 
+                </div>
+            </div> 
+            <!-- ./ Media browser Modal -->
+
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="css/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/component.js"></script>
+	</body>
+</html>
